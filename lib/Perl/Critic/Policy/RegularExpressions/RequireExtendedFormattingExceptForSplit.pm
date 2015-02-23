@@ -128,7 +128,7 @@ comments into the pattern, thus making them much more readable.
     }x;
 
 
-=head1 CONFIGURATION / supported_parameters
+=head1 CONFIGURATION
 
 You might find that putting a C</x> on short regular expressions to be
 excessive.  An exception can be made for them by setting
@@ -172,6 +172,8 @@ flags.
 
 Add an exemption for regular expressions that contain C<\Q> at the
 beginning and don't use C<\E> until the very end, if at all.
+
+=for Pod::Coverage supported_parameters
 
 =cut
 
