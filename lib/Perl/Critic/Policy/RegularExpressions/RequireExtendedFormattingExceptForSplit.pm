@@ -1,5 +1,7 @@
 package Perl::Critic::Policy::RegularExpressions::RequireExtendedFormattingExceptForSplit;
 
+# ABSTRACT: Always use the C</x> modifier with regular expressions, except when the regex is used
+
 use 5.006001;
 use strict;
 use warnings;
@@ -104,13 +106,6 @@ __END__
 
 =pod
 
-=head1 NAME
-
-Perl::Critic::Policy::RegularExpressions::RequireExtendedFormattingExceptForSplit
- - Always use the C</x> modifier with regular expressions, except when the regex is used
- to split
-
-
 =head1 DESCRIPTION
 
 Extended regular expression formatting allows you mix whitespace and
@@ -133,7 +128,7 @@ comments into the pattern, thus making them much more readable.
     }x;
 
 
-=head1 CONFIGURATION
+=head1 CONFIGURATION / supported_parameters
 
 You might find that putting a C</x> on short regular expressions to be
 excessive.  An exception can be made for them by setting
@@ -176,7 +171,7 @@ flags.
 =head1 TO DO
 
 Add an exemption for regular expressions that contain C<\Q> at the
-front and don't use C<\E> until the very end, if at all.
+beginning and don't use C<\E> until the very end, if at all.
 
 =cut
 
