@@ -1,0 +1,87 @@
+[![Build Status](https://travis-ci.org/reneeb/Perl-Critic-RENEEB.svg?branch=master)](https://travis-ci.org/reneeb/Perl-Critic-RENEEB)
+[![Kwalitee status](http://cpants.cpanauthors.org/dist/Perl-Critic-RENEEB.png)](http://cpants.charsbar.org/dist/overview/Perl-Critic-RENEEB)
+[![GitHub issues](https://img.shields.io/github/issues/reneeb/Perl-Critic-RENEEB.svg)](https://github.com/reneeb/Perl-Critic-RENEEB/issues)
+
+# NAME
+
+Perl::Critic::RENEEB - A collection of handy Perl::Critic policies
+
+# VERSION
+
+version 0.02
+
+# SYNOPSIS
+
+Perl::Critic::RENEEB is a collection of Perl::Critic policies that
+is used in my programming environment
+
+# DESCRIPTION
+
+The rules included with the Perl::Critic::RENEEB group include:
+
+## [Perl::Critic::Policy::RegularExpressions::RequireExtendedFormattingExceptForSplit](https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormattingExceptForSplit)
+
+I use split with regular expressions regularly, but I don't want to use the x-modifier there. So
+I wrote this policy to check all regular expressions in my programs but those used as a parameter to split.
+
+## [Perl::Critic::Policy::Reneeb::ProhibitBlockEval](https://metacpan.org/pod/Perl::Critic::Policy::Reneeb::ProhibitBlockEval)
+
+Use `try{...}` from [Try::Tiny](https://metacpan.org/pod/Try::Tiny) instead of `eval{...}`.
+
+
+
+# Development
+
+The distribution is contained in a Git repository, so simply clone the
+repository
+
+```
+$ git clone http://github.com/reneeb/Perl-Critic-RENEEB.git
+```
+
+and change into the newly-created directory.
+
+```
+$ cd Perl-Critic-RENEEB
+```
+
+The project uses [`Dist::Zilla`](https://metacpan.org/pod/Dist::Zilla) to
+build the distribution, hence this will need to be installed before
+continuing:
+
+```
+$ cpanm Dist::Zilla
+```
+
+To install the required prequisite packages, run the following set of
+commands:
+
+```
+$ dzil authordeps --missing | cpanm
+$ dzil listdeps --author --missing | cpanm
+```
+
+The distribution can be tested like so:
+
+```
+$ dzil test
+```
+
+To run the full set of tests (including author and release-process tests),
+add the `--author` and `--release` options:
+
+```
+$ dzil test --author --release
+```
+
+# AUTHOR
+
+Renee Baecker <reneeb@cpan.org>
+
+# COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2015 by Renee Baecker.
+
+This is free software, licensed under:
+
+    The Artistic License 2.0 (GPL Compatible)
