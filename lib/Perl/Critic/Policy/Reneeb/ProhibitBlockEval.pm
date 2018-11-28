@@ -33,7 +33,13 @@ sub applies_to           {
 sub violates {
     my ( $self, $elem, $doc ) = @_;
 
+    # other statements than eval aren't catched
     return if $elem->schild ne 'eval';
+
+    # string eval isn't catched by this policy
+    return if !$elem->schild->snext_sibling->isa('PPI::Structure::Block');
+
+    # code uses block-eval
     return $self->violation( $DESC, $EXPL, $elem );
 }
 
