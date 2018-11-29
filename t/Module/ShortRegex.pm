@@ -1,4 +1,4 @@
-package t::Module::SimpleRegex;
+package t::Module::ShortRegex;
 
 # ABSTRACT: This module does nothing 
 
