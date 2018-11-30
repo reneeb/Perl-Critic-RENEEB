@@ -5,7 +5,7 @@ use strict;
 
 # ABSTRACT: A collection of handy Perl::Critic policies
 
-our $VERSION = '0.03';
+our $VERSION = '2.00';
 
 =head1 SYNOPSIS
 
