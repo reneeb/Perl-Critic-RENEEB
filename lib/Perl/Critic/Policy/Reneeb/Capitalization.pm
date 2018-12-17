@@ -7,7 +7,7 @@ use warnings;
 
 use base 'Perl::Critic::Policy::NamingConventions::Capitalization';
 
-our $VERSION = '2.01';
+our $VERSION = '2.02';
 
 sub supported_parameters {
     my ($self) = @_;

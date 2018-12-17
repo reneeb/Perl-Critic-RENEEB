@@ -8,7 +8,7 @@ Perl::Critic::RENEEB - A collection of handy Perl::Critic policies
 
 # VERSION
 
-version 2.01
+version 2.02
 
 # SYNOPSIS
 
