@@ -1,3 +1,4 @@
-*.swp
-.build*
+/TODO
+*.sw*
+/.build*
 Perl-Critic-RENEEB*
