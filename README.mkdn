@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/reneeb/Perl-Critic-RENEEB.svg?branch=master)](https://travis-ci.org/reneeb/Perl-Critic-RENEEB)
-[![Kwalitee status](http://cpants.cpanauthors.org/dist/Perl-Critic-RENEEB.png)](http://cpants.charsbar.org/dist/overview/Perl-Critic-RENEEB)
+[![Kwalitee status](http://cpants.cpanauthors.org/dist/Perl-Critic-RENEEB.png)](https://cpants.cpanauthors.org/dist/Perl-Critic-RENEEB)
 [![GitHub issues](https://img.shields.io/github/issues/reneeb/Perl-Critic-RENEEB.svg)](https://github.com/reneeb/Perl-Critic-RENEEB/issues)
 
 # NAME
@@ -8,7 +8,7 @@ Perl::Critic::RENEEB - A collection of handy Perl::Critic policies
 
 # VERSION
 
-version 2.02
+version 2.03
 
 # SYNOPSIS
 
@@ -19,19 +19,19 @@ is used in my programming environment
 
 The rules included with the Perl::Critic::RENEEB group include:
 
-## [Perl::Critic::Policy::RegularExpressions::RequireExtendedFormattingExceptForSplit](https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormattingExceptForSplit)
+## [Perl::Critic::Policy::RegularExpressions::RequireExtendedFormattingExceptForSplit](https://metacpan.org/pod/Perl%3A%3ACritic%3A%3APolicy%3A%3ARegularExpressions%3A%3ARequireExtendedFormattingExceptForSplit)
 
 I use split with regular expressions regularly, but I don't want to use the x-modifier there. So
 I wrote this policy to check all regular expressions in my programs but those used as a parameter to split.
 
-## [Perl::Critic::Policy::Reneeb::ProhibitBlockEval](https://metacpan.org/pod/Perl::Critic::Policy::Reneeb::ProhibitBlockEval)
+## [Perl::Critic::Policy::Reneeb::ProhibitBlockEval](https://metacpan.org/pod/Perl%3A%3ACritic%3A%3APolicy%3A%3AReneeb%3A%3AProhibitBlockEval)
 
 Use `try{...}` from [Try::Tiny](https://metacpan.org/pod/Try::Tiny) instead of `eval{...}`.
 
-## [Perl::Critic::Policy::Reneeb::Capitalization](https://metacpan.org/pod/Perl::Critic::Policy::Reneeb::Capitalization)
+## [Perl::Critic::Policy::Reneeb::Capitalization](https://metacpan.org/pod/Perl%3A%3ACritic%3A%3APolicy%3A%3AReneeb%3A%3ACapitalization)
 
 Checks for capitalization of package names, subroutines, etc. It's a subclass of
-[Perl::Critic::Policy::NamingConventions::Capitalization](https://metacpan.org/pod/Perl::Critic::Policy::NamingConventions::Capitalization), but it adds the parameter
+[Perl::Critic::Policy::NamingConventions::Capitalization](https://metacpan.org/pod/Perl%3A%3ACritic%3A%3APolicy%3A%3ANamingConventions%3A%3ACapitalization), but it adds the parameter
 `full_qualified_package_exemptions` to exclude packages by "full qualified namespace".
 
     full_qualified_package_exemptions = Test::Command::.*

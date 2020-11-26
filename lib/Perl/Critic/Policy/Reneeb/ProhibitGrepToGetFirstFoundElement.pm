@@ -12,7 +12,7 @@ use Perl::Critic::Utils qw{ :severities };
 
 use base 'Perl::Critic::Policy';
 
-our $VERSION = '2.02';
+our $VERSION = '2.03';
 
 #-----------------------------------------------------------------------------
 
