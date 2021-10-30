@@ -1,6 +1,6 @@
 package Perl::Critic::Policy::RegularExpressions::RequireExtendedFormattingExceptForSplit;
 
-# ABSTRACT: Always use the C</x> modifier with regular expressions, except when the regex is used
+# ABSTRACT: Always use the C</x> modifier with regular expressions, except when the regex is used as the first argument of C<split>
 
 use 5.006001;
 use strict;
